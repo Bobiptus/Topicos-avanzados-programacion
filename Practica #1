@@ -1,6 +1,16 @@
-import tkinter *
+from tkinter import *
+import tkinter
 
-ventana = tkinter.Tk()
+ventana = tkinter.Tk()  # Crear una ventana
 ventana.geometry("400x300")
+
+etiqueta = tkinter.Label(ventana, text = "Hola mundo") # Crear una etiqueta
+etiqueta.pack()
+
+entrada = tkinter.Entry(ventana) # Crear una entrada de texto
+entrada.pack()
+
+boton = tkinter.Button(ventana, text = "Click me") # Crear un boton
+boton.pack()
 
 ventana.mainloop()
