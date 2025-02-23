@@ -19,7 +19,9 @@ def click_izq(event):
     
 def double_click(event):
     etiqueta_eventos.config(text=f"Doble click en ({event.x}, {event.y})")
-
+    color = random.choice(["red", "blue", "green", "yellow", "orange", "purple"])
+    ventana.config(bg = color)
+    
 def click_der(event):
     etiqueta_eventos.config(text=f"Click derecho en ({event.x}, {event.y})")
 
@@ -55,10 +57,6 @@ etiqueta_titulo.pack(pady=10)
 # Etiqueta específica para mostrar los eventos sin sobrescribir el título
 etiqueta_eventos = tkinter.Label(ventana, text="Aquí se mostrarán los eventos", font=("Arial", 12), fg="green")
 etiqueta_eventos.pack(pady=20)
-
-# Crear un boton para cambiar el color
-boton2 = tkinter.Button(ventana, text = "Cambiar color", command=cambiar_fondo) # Crear un boton para cambiar el color
-boton2.pack(pady=10)
 
 # Crear un boton para salir
 boton_salir = tkinter.Button(ventana, text = "Salir", command=ventana.quit) 
