@@ -90,7 +90,7 @@ def cambiocolorfondo():
     if micolor:
         texto.config(bg=micolor)
 
-def cambiotodofondo():
+def cambiocolortextopredeterminado():
     micolor = colorchooser.askcolor()[1]
     if micolor:
         texto.config(fg=micolor)       
@@ -169,7 +169,7 @@ cambiocolor_texto.grid(row=0, column=1, sticky=W)
 cambiofondo_texto = Button(marco_de_botones, text="Cambiar color de fondo", command=cambiocolorfondo)
 cambiofondo_texto.grid(row=0, column=2)
 
-cambiotodo_texto = Button(marco_de_botones, text="Cambiar todo el color de fondo", command=cambiotodofondo)
+cambiotodo_texto = Button(marco_de_botones, text="Cambiar color predeterminado texto", command=cambiocolortextopredeterminado)
 cambiotodo_texto.grid(row=0, column=3)
 
 
