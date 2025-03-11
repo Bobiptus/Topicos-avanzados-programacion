@@ -73,17 +73,6 @@ def pegartexto(e):
             posicion = texto.index(INSERT)
             texto.insert(posicion, seleccionado)
     
-def cambiocolortexto():
-    micolor = colorchooser.askcolor()[1]
-    if micolor:
-        barra_estatus.config(text=f'Color seleccionado: {micolor[1]}      ')
-        color_texto = font.Font(texto,texto.cget("font"))
-        texto.tag_configure("colortexto", font=color_texto, foreground=micolor)
-        actualseleccion = texto.tag_ranges("sel")
-        if "colored" in actualseleccion:
-            texto.tag_remove("colored", "sel.first", "sel.last")
-        else:
-            texto.tag_add("colortexto", "sel.first", "sel.last")
         
 def cambiocolorfondo():
     micolor = colorchooser.askcolor()[1]
@@ -163,8 +152,6 @@ root.bind("<Control-c>", copiartexto)
 root.bind("<Control-v>", pegartexto)
 
 # Botones
-cambiocolor_texto = Button(marco_de_botones, text="Cambiar color de texto", command=cambiocolortexto)
-cambiocolor_texto.grid(row=0, column=1, sticky=W)
 
 cambiofondo_texto = Button(marco_de_botones, text="Cambiar color de fondo", command=cambiocolorfondo)
 cambiofondo_texto.grid(row=0, column=2)
