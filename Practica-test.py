@@ -1,5 +1,5 @@
 from tkinter import *
-from txted import archivo_nuevo, archivo_abrir, grabararchivo, grabarcomo, cortartexto, copiartexto, pegartexto, buscar_texto, reemplazar_texto, cambiocolorfondo, cambiocolortextopredeterminado
+from txted.main import archivo_nuevo, archivo_abrir, grabararchivo, grabarcomo, cortartexto, copiartexto, pegartexto, cambiocolorfondo, cambiocolortextopredeterminado, buscar_texto, reemplazar_texto
 # Crear la ventana raíz
 root = Tk()
 root.title("Editor de texto")
