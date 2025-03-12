@@ -1,0 +1,8 @@
+LICENSE.txt
+setup.py
+txted/__init__.py
+txted/main.py
+txted.egg-info/PKG-INFO
+txted.egg-info/SOURCES.txt
+txted.egg-info/dependency_links.txt
+txted.egg-info/top_level.txt

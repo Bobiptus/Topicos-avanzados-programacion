@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: txted
+Version: 0.0.1
+Summary: Libreria para manipulacion de archivos de texto
+Author: Bobiptus
+Author-email: al24760228@ite.edu.mx
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# This is my simple proyect
+
+This is just a simple proyect to test the creation of libraries.
